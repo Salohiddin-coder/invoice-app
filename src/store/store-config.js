@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
 
 // slices
-import { invoicesReducer } from "./invoices-slice";
-import { userReducer } from "./user-slice";
+import { invoicesReducer } from "./slice";
+import { userReducer } from "./user-action";
 
 export const configStore = configureStore({
   reducer: {

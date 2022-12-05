@@ -6,7 +6,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { Form, Formik } from "formik";
 import * as yup from "yup";
 
-import { userActions } from "../../store/user-slice";
+import { userActions } from "../../store/user-action";
 import { Button } from "../button";
 import { Loader } from "../loader";
 

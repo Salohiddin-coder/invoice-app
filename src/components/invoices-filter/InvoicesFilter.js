@@ -1,9 +1,9 @@
 import { useDispatch } from "react-redux";
 
 import { axiosInstans } from "../../services/axios";
-import { invoicesActions } from "../../store/invoices-slice";
+import { invoicesActions } from "../../store/slice";
 
-import "./invoices.scss";
+import "./invoices-filter.scss";
 
 export const InvoicesFilter = () => {
   const dispatch = useDispatch();

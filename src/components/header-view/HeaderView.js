@@ -2,14 +2,14 @@ import { useSelector } from "react-redux";
 import { Button } from "../button";
 import { InvoicesStatus } from "../invoices-status";
 
-import "./view-header.scss";
+import "./header-view.scss";
 
-export const ViewHeader = ({ id, paid, hadnleDeleteInvoice, deleting, handleClickPaid, paiding }) => {
+export const HeaderView = ({ id, paid, hadnleDeleteInvoice, deleting, handleClickPaid, paiding }) => {
   const { user } = useSelector(item => item.user);
   return (
-    <div className="view-header">
-      <div className="view-header__left">
-        <p className="view-header__text">Status</p>
+    <div className="header-view">
+      <div className="header-view__left">
+        <p className="header-view__text">Status</p>
         <InvoicesStatus className={paid ? "" : "invoices-status--false"}>
           {
             paid ? "Paid" : "Pending"
@@ -17,7 +17,7 @@ export const ViewHeader = ({ id, paid, hadnleDeleteInvoice, deleting, handleClic
         </InvoicesStatus>
       </div>
 
-      <div className="view-header__left">
+      <div className="header-view__left">
         <Button to={user ? "edite" : "/login"} className="button--edite" state={{
           redirect: !user && `/view/${id}/edite`
         }} >
@@ -30,7 +30,7 @@ export const ViewHeader = ({ id, paid, hadnleDeleteInvoice, deleting, handleClic
           Delete
 
           {
-            deleting && <i className="view-header__spinner fa fa-spinner fa-spin "></i>
+            deleting && <i className="header-view__spinner fa fa-spinner fa-spin "></i>
           }
         </Button>
         {
@@ -45,7 +45,7 @@ export const ViewHeader = ({ id, paid, hadnleDeleteInvoice, deleting, handleClic
           >
             Mark as Paid
             {
-              paiding && <i className="view-header__spinner fa fa-spinner fa-spin "></i>
+              paiding && <i className="header-view__spinner fa fa-spinner fa-spin "></i>
             }
           </Button>
         }

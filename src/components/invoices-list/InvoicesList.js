@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import { axiosInstans } from "../../services";
-import { invoicesActions } from "../../store/invoices-slice";
+import { invoicesActions } from "../../store/slice";
 
 import { Empty } from "../empty";
 import { InvoicesItem } from "../invoices-item";

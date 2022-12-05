@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { useNavigate, useParams } from "react-router-dom"
 import { Container, Goback, InvoicesForm, Loader, SiteBar } from "../../components"
 import { axiosInstans } from "../../services";
-import { invoicesActions } from "../../store/invoices-slice";
+import { invoicesActions } from "../../store/slice";
 
 export const EditeInvoices = () => {
 

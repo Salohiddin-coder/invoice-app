@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 
-import { Container, Goback, Loader, SiteBar, ViewBody, ViewHeader } from "../../components";
+import { Container, Goback, Loader, SiteBar, BodyView, HeaderView } from "../../components";
 import { axiosInstans } from "../../services";
-import { invoicesActions } from "../../store/invoices-slice";
+import { invoicesActions } from "../../store/slice";
 
 export const ViewInvoices = () => {
   const { invoicesList } = useSelector(item => item.invoices);
@@ -80,14 +80,14 @@ export const ViewInvoices = () => {
           <>
             {(invoicesItem || invoicesId) ?
               <>
-                <ViewHeader
+                <HeaderView
                   {...(invoicesItem || invoices)}
                   deleting={deleting}
                   hadnleDeleteInvoice={hadnleDeleteInvoice}
                   handleClickPaid={handleClickPaid}
                   paiding={paiding}
                 />
-                <ViewBody {...(invoicesItem || invoices)} />
+                <BodyView {...(invoicesItem || invoices)} />
               </>
               : <h3>no such invoice</h3>
             }

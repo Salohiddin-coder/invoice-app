@@ -1,4 +1,4 @@
-export const invoicesExseple = [
+export const invoicesExample = [
   {
     "userId": 1,
     "paid": true,

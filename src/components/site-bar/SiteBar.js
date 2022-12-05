@@ -2,9 +2,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 import logo from "../../assets/img/logo.svg";
-import notUser from "../../assets/img/not-user.png";
+import nonUser from "../../assets/img/non-user.png";
 import userAvatar from "../../assets/img/user.svg"
-import { userActions } from "../../store/user-slice/user.slice";
+import { userActions } from "../../store/user-action/UserAction";
 
 import "./site-bar.scss";
 
@@ -27,7 +27,7 @@ export const SiteBar = () => {
       <div className="site-bar__bottom">
         <div>
           <Link to={user ? "" : "/login"}>
-            <img src={user ? userAvatar : notUser} alt="not user" width={40} height={40} />
+            <img src={user ? userAvatar : nonUser} alt="not user" width={40} height={40} />
           </Link>
           {
             user && <button className="site-bar__button" onClick={handleClickLogOut}>Log out</button>
