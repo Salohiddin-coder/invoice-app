@@ -1,9 +1,9 @@
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
-import logo from "../../assets/img/logo.svg";
-import nonUser from "../../assets/img/non-user.png";
-import userAvatar from "../../assets/img/user.svg"
+import logo from "../../assets/images/logo.svg";
+import nonUser from "../../assets/images/non-user.png";
+import userAvatar from "../../assets/images/user.svg"
 import { userActions } from "../../store/user-action/UserAction";
 
 import "./site-bar.scss";
