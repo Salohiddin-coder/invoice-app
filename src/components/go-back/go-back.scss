@@ -1,0 +1,23 @@
+.go-back {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: -0.25px;
+  color: #0C0E16;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.4s ease;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &__span {
+    margin-top: -3px;
+    margin-right: 26px;
+    color: #7C5DFA;
+    font-size: 24px;
+  }
+
+}

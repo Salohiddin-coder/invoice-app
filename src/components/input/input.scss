@@ -1,0 +1,26 @@
+.input {
+  padding: 16px 20px;
+  display: block;
+  font-weight: 700;
+  font-size: 12px;
+  width: 100%;
+  background-color: #fff;
+  outline-color: #9277FF;
+  border: 1px #DFE3FA solid;
+  border-radius: 4px;
+  line-height: 15px;
+  letter-spacing: -0.25px;
+  color: #0C0E16;
+
+  &::placeholder {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+    color: #0C0E16;
+  }
+}
+
+.input--error {
+  border: 1px #EC5757 solid;
+}

@@ -1,0 +1,24 @@
+.invoices-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: -1px;
+    color: #0C0E16;
+  }
+
+  &__total {
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+    color: #888EB0;
+  }
+}

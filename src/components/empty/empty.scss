@@ -1,0 +1,22 @@
+.empty {
+  text-align: center;
+  margin-top: 200px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: -0.625px;
+    color: #0C0E16;
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: -0.25px;
+    color: #888EB0;
+  }
+}

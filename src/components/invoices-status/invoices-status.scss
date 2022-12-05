@@ -1,0 +1,36 @@
+.invoices-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 104px;
+  padding: 13px 0;
+  background-color: #F3FDFA;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+
+
+  &>span {
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+    color: #33D69F;
+  }
+
+  &__span {
+    font-size: 30px;
+  }
+
+  &__text {
+    font-size: 14px;
+    margin-left: 8px;
+  }
+}
+
+.invoices-status--false {
+  background-color: #FFF9F0;
+
+  &>span {
+    color: #FF8F00;
+  }
+}

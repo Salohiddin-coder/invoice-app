@@ -1,0 +1,31 @@
+.view-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 34px;
+  width: 100%;
+  padding: 20px 32px;
+  background-color: #fff;
+  box-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.100397);
+  border-radius: 8px;
+
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+    color: #858BB2;
+    margin-right: 16px;
+  }
+}
+
+.view-header__spinner {
+  margin-left: 5px;
+  font-size: 15px;
+}
