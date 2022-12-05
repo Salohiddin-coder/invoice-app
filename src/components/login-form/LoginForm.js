@@ -64,8 +64,8 @@ export const LoginForm = () => {
           }}
 
           validationSchema={yup.object().shape({
-            email: yup.string().required("can't be empty"),
-            password: yup.string().required("can't be empty")
+            email: yup.string().required("must be filled"),
+            password: yup.string().required("must be filled")
 
           })}
 

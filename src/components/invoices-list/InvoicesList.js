@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { axiosInstans } from "../../services";
 import { invoicesActions } from "../../store/slice";
 
-import { Empty } from "../empty";
+import { Empty } from "../empty-filter";
 import { InvoicesItem } from "../invoices-item";
 import { Loader } from "../loader";
 
